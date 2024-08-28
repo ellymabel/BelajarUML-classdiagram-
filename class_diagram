@@ -1,0 +1,43 @@
+@startuml
+
+class person{
++nama :string
++age  :int
++getname() :string
++getage()  :int
+}
+
+class teacher{
++employID : string
++getemployID() : string
+}
+
+class student{
++studentID : string
++getstudentID : string
+}
+
+teacher--|>person
+student--|>person
+
+class manusia {
++nama person
++umur person
+}
+
+class guru{
++id001 : string
++EKO ARI NUGROHO : string
++29 tahun : string
+}
+
+class siswa{
++ids001 : string
++elly   :string
++ids002 : string
++piter  :string
+}
+manusia--|>siswa
+manusia--|>guru
+
+@enduml
